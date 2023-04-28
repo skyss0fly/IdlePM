@@ -5,7 +5,7 @@ namespace skyss0fly\IdlePM;
 use pocketmine\Plugin\PluginBase;
 
 class Main extends PluginBase {
-   private commandsmode
+   private commandmode
 
   public function onLoad(): void {
   $this->getLogger()->info("Loading The Idle Of the Century")
@@ -19,7 +19,7 @@ class Main extends PluginBase {
   
     private function loadConfig(): void {
         $config = $this->getConfig();
-        $this->commandsmode = $config->get("commandsmode", []);
+        $this->commandmode = $config->get("commandmode", []);
       
     }
   
