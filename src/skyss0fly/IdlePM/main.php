@@ -15,6 +15,7 @@ class Main extends PluginBase {
   public function onEnable(): void {
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->loadConfig();
+$this->getLogger()->info("Idle Has Loaded. use /idle for list of commands and setup")
     }
   
     private function loadConfig(): void {
